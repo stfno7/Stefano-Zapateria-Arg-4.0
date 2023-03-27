@@ -1,0 +1,169 @@
+<!DOCTYPE html> <!-- Trabajo Final. Argentina Programa 4.0. Estudiante: Stéfano Parrachini, 29/03/2022. Introducción a Desarrollo web con Javascript y React, Etapa 1. Profesor: Gustavo Adrián Salvadore -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css"> <!-- ARCHIVO CSS-->
+    <link rel="icon" href="img/logo.jpg"> <!-- ICONO PAG -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script> <!-- ICONIFY ICONOS CDN-->
+    
+    <!-- ARCHIVOS DE LA PAGINA SLICK CDN, PARA DESLIZAR IMAGENES-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- ARCHIVOS DE LA PAGINA SLICK CDN, PARA DESLIZAR IMAGENES-->
+
+    <title>SP / Zapateria Stefano - Tienda Oficial - Envíos a Todo el País - SP ZAPATERIA STEFANO</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="header-izq">
+          <a href="https://www.facebook.com" target="_blank"><iconify-icon icon="ri:facebook-fill" style="color: white;"></iconify-icon></a>
+          <a href="https://www.instagram.com" target="_blank"><iconify-icon icon="mdi:instagram" style="color: white;"></iconify-icon></a>
+        </div>
+        <div class="header-mid">
+          <p id="header-text">3 Cuotas sin Interés</p>
+        </div>
+        <div class="header-der">
+          <a href="#"><iconify-icon icon="material-symbols:search" style="color: white;"></iconify-icon></a>
+          <a href="#"><iconify-icon icon="mdi:user" style="color: white;"></iconify-icon></a>
+          <p class="carrito">Mi carrito <a class="carrito-icon" href="#"><iconify-icon icon="ph:bag-simple" style="color: white;"></iconify-icon></a></p>
+        </div>
+      </header>
+      <!--HEADER-->
+
+       <!-- NAV--> 
+       <div class="navbar"> <!-- COMENTARIO: SE ME COMPLICÓ PARA HACER EL MENÚ HAMBURGUESA, DEBES CLICKEAR PARA CERRARLO, CUANDO SE ESTA DESDE UNA RESOLUCIÓN MOVIL-->
+        <button class="menu-toggle">&#9776;</button>
+      <nav>
+        <div class="nav-logo">
+          <img src="img/nav-img.png" alt="Logo-SP">
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li class="nav-menu-item"><a href="#" class="active">Mujer</a>
+              <ul class="sub-menu">
+                  <ul>
+                    <li><a href="index2.html">Nike</a></li>
+                    <li><a href="index2.html">Adidas</a></li>
+                    <li><a href="index2.html">Jordan</a></li>
+                    <li><a href="index2.html">Yeezy</a></li>
+                    <li><a href="index2.html">Nocta</a></li>
+                    <li><a href="index2.html">Deportivas</a></li>
+                    <li><a href="index2.html">Skate</a></li>
+                    <li><a href="index2.html">Accesorios</a></li>
+                    <li><a href="index2.html">Rebajas</a></li>
+                    <li><a href="index2.html">Ver todo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu-item"><a href="#">Hombre</a>
+              <ul class="sub-menu">
+                  <ul>
+                    <li><a href="index2.html">Nike</a></li>
+                    <li><a href="index2.html">Adidas</a></li>
+                    <li><a href="index2.html">Jordan</a></li>
+                    <li><a href="index2.html">Yeezy</a></li>
+                    <li><a href="index2.html">Nocta</a></li>
+                    <li><a href="index2.html">Deportivas</a></li>
+                    <li><a href="index2.html">Skate</a></li>
+                    <li><a href="index2.html">Accesorios</a></li>
+                    <li><a href="index2.html">Rebajas</a></li>
+                    <li><a href="index2.html">Ver todo</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-menu-item"><a href="#">Colegial</a>
+              <ul class="sub-menu">
+                <li><a href="index2.html">Del 28 al 33</a></li>
+                <li><a href="index2.html">Del 34 al 41</a></li>
+                <li><a href="index2.html">Del 41 al 45</a></li>
+                <li><a href="index2.html">Ver todo</a></li>
+              </ul>
+            </li>
+            <li class="nav-menu-item"><a href="#" id="abrir-modal">Tabla de talles</a></li>
+            <div id="modal">
+              <div class="modal-contenido">
+                <img src="img/tabla-talles.jpg" alt="Tabla de talles">
+                <button id="cerrar-modal">&times;</button>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <hr>
+      <!-- NAV-->
+
+      <section class="boton-flotante">
+        <a href="index.html">Volver al inicio</a>
+      </section>
+
+      <!-- SECCION IMAGEN SLIDER-->
+      <section class="imagen-slider">
+        <div><img src="img/page2-img3.jpg"></div>
+        <div><img src="img/page2-img2.jpg"></div>
+      </div>
+    </section>
+    <!-- SECCION IMAGEN SLIDER-->
+
+
+    <!-- SECCION-->
+    <section class="testimonios">
+      <h2>Más de 10.000 clientes satisfechos en el país!</h2>
+      <div class="contacto">
+        <p>Visítanos en <span class="direccion">Avenida Siempre Viva. Entre 60 y 62</span></p>
+        <p>Llámanos al <span class="telefono">+54 (2262) 41-4141</span></p>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com" target="_blank"><iconify-icon icon="ri:facebook-fill" style="color: rgb(34, 34, 34);"></iconify-icon></a>
+          <a href="https://www.instagram.com" target="_blank"><iconify-icon icon="mdi:instagram" style="color: rgb(34, 34, 34);"></iconify-icon></a>
+        </div>
+      <div class="slider">
+        <div class="testimonio">
+          <p>"El servicio es excelente y el personal muy amable. Definitivamente volvería a comprar aquí."</p>
+          <span class="autor">- Ramon Dino</span>
+        </div>
+        <div class="testimonio">
+          <p>"¡Increíble! Me encantó la calidad del producto y la rapidez en el envío. Recomendado totalmente."</p>
+          <span class="autor">- Chris Bumstead</span>
+        </div>
+        <div class="testimonio">
+          <p>"No podría estar más satisfecho con mi compra. El producto superó mis expectativas y el precio es accesible."</p>
+          <span class="autor">- Breon Asley</span>
+        </div>
+      </div>
+    </section>
+    <!-- SECCION-->
+
+    <!-- FOOTER-->
+    <footer>
+        <ul>
+          <h3>SHOP</h3>
+          <a href="index2.html"><li>MUJER</li></a>
+          <a href="index2.html"><li>HOMBRE</li></a>
+          <a href="index2.html"><li>COLEGIAL</li></a>
+          <a href="index2.html"><li>TABLA DE TALLES</li></a>
+        </ul>
+        <ul>
+          <h3>MÁS</h3>
+          <a href="index2.html"><li>LOCALES</li></a>
+          <a href="https://wa.me/+542262553641" target="_blank"><li>CONTACTO</li></a>
+          <a href="https://www.argentina.gob.ar/terminos-y-condiciones" target="_blank"><li>TERMINOS Y CONDICIONES</li></a>
+          <a href="https://www.argentina.gob.ar/justicia/derechofacil/leysimple/defensa-del-consumidor"><li>REEMBOLSO</li></a>
+        </ul>
+        <h3>¿DONDE ESTAMOS?</h3>
+        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+          <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+      </footer>
+      <p class="copyright">&copy; Stefano Parrachini. Arg Programa 4.0 2023</p>
+      <!-- FOOTER-->
+
+
+      <script src="script2.js" type="text/javascript"></script>
+</body>
+</html>

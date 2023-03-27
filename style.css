@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Montserrat:wght@200&family=Playfair+Display&family=Roboto:ital,wght@0,100;1,300&display=swap'); /** FUENTE CRIMSON TEXT **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** ELEMENTOS HEADER **/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 6%;
+    background-color: #000000;
+    color: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .header-izq a {
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  .header-mid {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header-der {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-der a {
+    margin-right: 20px;
+    color: #fff;
+  }
+  
+  .carrito {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Helvetica';
+  }
+
+  .carrito-icon {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-top: 3.5px;
+  }
+
+  #header-text {
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Helvetica';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .iconify {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .iconify:before {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+/** ELEMENTOS HEADER **/
+
+
+/** MODAL - TABLA DE TALLES **/
+#modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#modal .modal-contenido {
+  background-color: #fff;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  margin: 10% auto;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.modal-contenido img {
+  max-width: 100%;
+}
+
+#cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#cerrar-modal:focus {
+  outline: none;
+}
+
+#cerrar-modal:hover {
+  color: #fff;
+}
+/** MODAL - TABLA DE TALLES **/
+
+
+/** NAV **/
+  nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 200px;
+}
+
+  .nav-logo img {
+  max-width: 100%;
+}
+  .nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .nav-menu li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .nav-menu a {
+    display: block;
+    padding: 0 10px;
+    line-height: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Helvetica';
+    font-weight: 600;
+  }
+
+  .sub-menu {
+    position: absolute; 
+    top: 60px;
+    left: 0;
+    z-index: 999; 
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px thin #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: none;
+  }
+  
+  .sub-menu li {
+    display: block;
+  }
+  
+  .sub-menu a {
+    line-height: 1.5;
+    padding: 4px 0px 0px 10px;
+    font-size: 13px;
+    color: rgb(70, 70, 70);
+  }
+  .sub-menu a:hover {
+    color: rgb(37, 37, 37);
+    transition: .3s;
+  }
+  .nav-menu li:hover .sub-menu {
+    display: block;
+  }
+
+  .active {
+    color: red !important;
+  }
+/** NAV **/
+
+/** MENU HAMBURGUESA **/
+  .menu-toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 2em;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+/** MENU HAMBURGUESA **/
+
+
+/** SECCION CON IMAGENES SLIDER **/
+.imagen-slider img{
+  max-width: 100%;
+  max-height: 500px;
+}
+/** SECCION CON IMAGENES SLIDER **/
+
+
+/** SECCION CARDS **/
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.cards div {
+  margin-right: 20px;
+  position: relative;
+  width: 300px;
+  height: 800px;
+}
+
+.cards img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-top-right-radius: 2%;
+  border-top-left-radius: 2%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cards div:hover img {
+  transform: scale(1.1);
+}
+
+.card-texto {
+  position: absolute;
+  top: 620px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Crimson Text';
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+
+}
+
+/** SECCION CARDS **/
+
+
+/** SECCION MODELOS **/
+.modelos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.modelos img{
+  float: left;
+  max-width: 100%;
+}
+
+.img-alinear {
+  margin-top: 60px;
+  cursor: pointer;
+}
+/** SECCION MODELOS **/
+
+
+
+/** NEWSLETTER **/
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.newsletter h2 {
+  font-family: 'Crimson text';
+  font-size: 2em;
+}
+
+.newsletter h3 {
+  font-family: 'Crimson text';
+  font-size: 1.2em;
+}
+
+.newsletter p {
+  font-family: 'Helvetica';
+  margin-top: 7px;
+}
+.newsletter input[type="email"] {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.newsletter button[type="submit"] {
+  background-color: #f14040;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.newsletter button[type="submit"]:hover {
+  background-color: #ff3300;
+}
+
+/** NEWSLETTER **/
+
+
+
+/** FOOTER **/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #080808;
+  color: white;
+  height: 500px;
+}
+
+footer h3 {
+  margin: 10px;
+  clear: both;
+  font-family: 'Crimson text';
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 10px;
+}
+
+footer ul, li, a {
+  text-decoration: none;
+  color: white;
+}
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  background-color: #080808;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+/** FOOTER **/
+
+/** MEDIAS **/
+@media (max-width: 768px) { /** MENU HAMBURGUESA MEDIA **/
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+nav.show {
+  display: block;
+}
